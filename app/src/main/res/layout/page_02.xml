@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="#fc6013"
+		android:orientation="horizontal"
+		>
+		<TextView android:layout_width="0dp"
+				  android:layout_height="match_parent"
+				  android:layout_weight="0.2"
+				  android:layout_marginLeft="10dp"
+				  android:layout_marginTop="10dp"
+				  android:gravity="center"
+				  android:text="兰山区"
+				  android:drawableLeft="@mipmap/dwtb"
+				  android:clickable="true"
+				  android:onClick="showAddress"
+				  android:textColor="#FFFFFF"
+				  android:textSize="18sp"
+				  android:textStyle="bold"/>
+
+		<ImageView android:layout_width="0dp"
+				   android:layout_height="match_parent"
+				   android:layout_weight="0.6"
+				   android:gravity="center"
+				   android:src="@mipmap/ss"
+				   android:clickable="true"
+				   android:onClick="showSearch"
+				   android:layout_marginTop="5dp"
+				   android:contentDescription="@null"/>
+
+		<ImageView android:layout_width="0dp"
+				   android:layout_height="match_parent"
+				   android:layout_weight="0.1"
+				   android:id="@+id/iv_show_Pop"
+				   android:clickable="true"
+				   android:layout_alignParentRight="true"
+				   android:onClick="showPop"
+				   android:src="@mipmap/xlcd"
+				   android:layout_marginTop="5dp"
+				   android:layout_marginRight="5dp"
+				   android:contentDescription="@null"/>
+	</LinearLayout>
+
+
+
+
+</LinearLayout>

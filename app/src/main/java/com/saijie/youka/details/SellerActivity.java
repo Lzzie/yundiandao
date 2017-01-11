@@ -4,10 +4,7 @@ import android.app.AlertDialog;
 import android.app.DialogFragment;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -29,9 +26,6 @@ public class SellerActivity extends BaseActivity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_seller);
-		
-
-
 
 //增加，减少
 		addandsub=(CicleAddAndSubView)findViewById(R.id.btn);
@@ -41,8 +35,7 @@ public class SellerActivity extends BaseActivity{
 
 			@Override
 			public void onNumChange(View view, int stype, int num) {
-
-				Toast.makeText(SellerActivity.this,""+ num, 1).show();
+				Toast.makeText(SellerActivity.this,""+ num, Toast.LENGTH_SHORT).show();
 			}
 
 		});
@@ -69,6 +62,8 @@ public class SellerActivity extends BaseActivity{
 
 		button.setOnClickListener(new View.OnClickListener() {
 
+//	else可以删减
+
 			@Override
 			public void onClick(View view) {
 				if(llayout.getVisibility()==View.VISIBLE){
@@ -81,8 +76,6 @@ public class SellerActivity extends BaseActivity{
 					llayout2.setVisibility(View.GONE);
 					llayout3.setVisibility(View.VISIBLE);
 					llayout4.setVisibility(View.GONE);
-
-
 				}
 			}
 
@@ -102,13 +95,10 @@ public class SellerActivity extends BaseActivity{
 					llayout2.setVisibility(View.GONE);
 					llayout3.setVisibility(View.VISIBLE);
 					llayout4.setVisibility(View.GONE);
-
-
 				}
 			}
 
 		});
-
 	}
 
 	public  void showDialog (View view)
@@ -127,8 +117,6 @@ public class SellerActivity extends BaseActivity{
 
 	private void setPositiveButton(String 确定, Object o) {
 	}
-
-
 
 
 	public void showSuborder(View view){

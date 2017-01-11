@@ -10,6 +10,7 @@
         </LinearLayout>
         <LinearLayout android:layout_width="match_parent"
                       android:layout_height="50dp"
+                      android:layout_marginTop="6dp"
                       android:id="@+id/topone"
                       android:background="#fc6013"
                       android:orientation="horizontal">
@@ -21,10 +22,10 @@
                 android:textSize="20sp"
                 android:drawablePadding="5dp"
                 android:layout_marginLeft="10dp"
-            android:drawableLeft="@mipmap/back"
-            android:onClick="goback"
-            android:clickable="true"
-            android:textColor="#FFFFFF"/>
+                android:drawableLeft="@mipmap/back"
+                android:onClick="goback"
+                android:clickable="true"
+                android:textColor="#FFFFFF"/>
         <LinearLayout android:layout_width="0dp"
                       android:layout_weight="0.5"
                       android:gravity="right"
@@ -66,8 +67,9 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@mipmap/seller_banner"
-                    android:contentDescription="@null"/>
+                    android:background="@mipmap/seller_banner"
+                    android:contentDescription="@null"
+                    android:id="@+id/imageView"/>
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
@@ -669,9 +671,9 @@
         </LinearLayout>
     </ScrollView>
     <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#cccccc"/>
+        android:layout_height="0dp"
+        android:background="#cccccc"
+        android:layout_width="match_parent"/>
     <!--底部价格-->
     <include layout="@layout/bottom_seller_trolley"/>
     <include layout="@layout/bottom_seller_trolley2"/>

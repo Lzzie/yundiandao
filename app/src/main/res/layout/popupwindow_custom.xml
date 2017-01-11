@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:orientation="horizontal"
+		android:background="#ffffff">
+		<com.saijie.youka.pop.DrawableCenterTextView
+			android:id="@+id/find"
+			android:layout_marginTop="20dp"
+			android:layout_width="100dp"
+			android:layout_height="match_parent"
+			android:text="酒店"
+			android:drawableTop="@mipmap/jshipsi_jd"
+			android:gravity="center"
+			android:background="#ffffff"
+			android:textColor="#999999"/>
+
+		<com.saijie.youka.pop.DrawableCenterTextView
+			android:id="@+id/click"
+			android:layout_width="100dp"
+			android:layout_marginTop="20dp"
+			android:layout_height="match_parent"
+			android:text="外卖"
+			android:drawableTop="@mipmap/jshipai_wm"
+			android:gravity="center"
+			android:background="#ffffff"
+			android:textColor="#999999"/>
+
+
+		<com.saijie.youka.pop.DrawableCenterTextView
+			android:id="@+id/send"
+			android:layout_width="100dp"
+			android:layout_marginTop="20dp"
+			android:layout_height="match_parent"
+			android:text="娱乐"
+			android:drawableTop="@mipmap/jshipai_yl"
+			android:gravity="center"
+			android:background="#ffffff"
+			android:textColor="#999999"/>
+
+		<com.saijie.youka.pop.DrawableCenterTextView
+			android:id="@+id/send2"
+			android:layout_width="100dp"
+			android:layout_marginTop="20dp"
+			android:layout_height="match_parent"
+			android:text="美食"
+			android:drawableTop="@mipmap/jshipai_ms"
+			android:gravity="center"
+			android:background="#ffffff"
+			android:textColor="#999999"/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="90dp"
+		android:orientation="horizontal"
+		android:background="#ffffff">
+		<com.saijie.youka.pop.DrawableCenterTextView
+			android:id="@+id/movie"
+			android:layout_width="100dp"
+			android:layout_marginTop="20dp"
+			android:layout_marginBottom="10dp"
+			android:layout_height="match_parent"
+			android:text="电影"
+			android:drawableTop="@mipmap/jshipai_dy"
+			android:gravity="center"
+			android:background="#ffffff"
+			android:textColor="#999999"/>
+	</LinearLayout>
+
+</LinearLayout>

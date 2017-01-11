@@ -3,9 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:background="#ffffff"
-    >
-
+    android:background="#ffffff">
+<!--此页背景现为#ffffff-->
 
     <LinearLayout android:layout_width="match_parent"
         android:layout_height="6dp"
@@ -46,11 +45,7 @@
                     android:textColor="#a1a1a1"
                     android:background="@drawable/bg_search_sousuo"
                     android:layout_marginTop="8dp" />
-
-
-
             </LinearLayout>
-
         </LinearLayout>
 
         <TextView
@@ -66,6 +61,7 @@
             android:gravity="center"
             android:textColor="#ededed"/>
     </LinearLayout>
+
     <LinearLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ededed"
@@ -116,6 +112,8 @@
                 android:textColor="#333333"
                 android:layout_marginRight="10dp"/>
         </LinearLayout>
+
+
         <View android:layout_width="fill_parent"
             android:layout_height="20dp"
             android:background="#ffffff" />
@@ -139,11 +137,21 @@
                 android:background="@drawable/bg_search_white"
                 android:textSize="16sp"
                 android:textColor="#333333"/>
+
+        </LinearLayout>
+        <View android:layout_width="fill_parent"
+              android:layout_height="15dp"
+              android:background="#ffffff" />
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:background="#ffffff"
+                      android:orientation="horizontal"
+                      android:layout_gravity="left">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="金龟馅饼"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="20dp"
                 android:background="@drawable/bg_search_white"
                 android:textSize="16sp"
                 android:textColor="#333333"
@@ -174,8 +182,9 @@
         <View android:layout_width="fill_parent"
             android:layout_height="15dp"
             android:background="#ffffff" />
+
         <LinearLayout android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="#ffffff"
             android:orientation="horizontal"
             android:layout_gravity="left">
@@ -228,16 +237,28 @@
                 android:background="@drawable/bg_search_white"
                 android:textSize="16sp"
                 android:textColor="#333333"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="fill_parent"
+              android:layout_height="15dp"
+              android:background="#ffffff" />
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:background="#ffffff"
+                      android:orientation="horizontal"
+                      android:layout_gravity="left">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="金龟馅饼"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="20dp"
                 android:background="@drawable/bg_search_white"
                 android:textSize="16sp"
                 android:textColor="#333333"
                 android:layout_marginRight="10dp"/>
         </LinearLayout>
+
         <View android:layout_width="fill_parent"
             android:layout_height="15dp"
             android:background="#ffffff" />

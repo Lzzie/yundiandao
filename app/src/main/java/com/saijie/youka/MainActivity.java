@@ -58,6 +58,8 @@ public class MainActivity extends Activity {
 
     private ImageView indexIconSelect;
     private ImageView indexIconNormal;
+    private ImageView contactIconSelect;
+    private ImageView contactIconNormal;
     private ImageView findIconSelect;
     private ImageView findIconNormal;
     private ImageView meIconSelect;
@@ -65,6 +67,8 @@ public class MainActivity extends Activity {
 
     private TextView indexTextSelect;
     private TextView indexTextNormal;
+    private TextView contactTextSelect;
+    private TextView contactTextNormal;
     private TextView findTextSelect;
     private TextView findTextNormal;
     private TextView meTextSelect;
@@ -75,13 +79,14 @@ public class MainActivity extends Activity {
 
     private View indexView;
     private View findView;
+    private View  contactView;
     private View meView;
+
     private final int INDEX = 0; // 首页菜单索引
     private final int FIND_INDEX = 1; // 发现菜单索引
-    private final int ME_INDEX = 2; // 我的菜单索引
+    private final int CONTACT_INDEX = 2; // 联系人菜单索引
+    private final int ME_INDEX = 3; // 我的菜单索引
     private int curIndex; // 当前菜单索引
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,28 +139,29 @@ public class MainActivity extends Activity {
         @Override
         public void onItemClick(ActionItem item, int position) {
             // mLoadingDialog.show();
+            // Toast.makeText(MainActivity.this, "发起聚餐",1).show();
             switch (position) {
-                case 0:// 发起群聊
-                    Toast.makeText(MainActivity.this, "发起聚餐",1).show();
+                case 0:// 发起聚餐
+                    Toast.makeText(MainActivity.this, "发起聚餐",Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, FqjcActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
                     startActivity(intent);
                     break;
-                case 1:// 添加老友
-                    Toast.makeText(MainActivity.this, " 添加老友",1).show();
+                case 1:// 收付款
+                    Toast.makeText(MainActivity.this, " 收付款",Toast.LENGTH_SHORT).show();
                     intent = new Intent(MainActivity.this, FriendActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
                     startActivity(intent);
                     break;
                 case 2:// 扫一扫
-                    Toast.makeText(MainActivity.this, "扫一扫",1).show();
+                    Toast.makeText(MainActivity.this, "扫一扫",Toast.LENGTH_SHORT).show();
                     intent = new Intent(MainActivity.this, CaptureActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
                     startActivity(intent);
 
                     break;
                 case 3:// 关于与帮助
-                    Toast.makeText(MainActivity.this, "关于与帮助",1).show();
+                    Toast.makeText(MainActivity.this, "关于与帮助",Toast.LENGTH_SHORT).show();
                     break;
                 default:
                     break;
@@ -179,28 +185,35 @@ public class MainActivity extends Activity {
         indexIconNormal = (ImageView) findViewById(R.id.index_icon_normal);
         findIconSelect = (ImageView) findViewById(R.id.find_icon_select);
         findIconNormal = (ImageView) findViewById(R.id.find_icon_normal);
+        contactIconSelect = (ImageView) findViewById(R.id.contact_icon_select);
+        contactIconNormal = (ImageView) findViewById(R.id.contact_icon_normal);
         meIconSelect = (ImageView) findViewById(R.id.me_icon_select);
         meIconNormal = (ImageView) findViewById(R.id.me_icon_normal);
-
         indexTextSelect = (TextView) findViewById(R.id.index_text_select);
         indexTextNormal = (TextView) findViewById(R.id.index_text_normal);
         findTextSelect = (TextView) findViewById(R.id.find_text_select);
         findTextNormal = (TextView) findViewById(R.id.find_text_normal);
+        contactTextSelect = (TextView) findViewById(R.id.contact_text_select);
+        contactTextNormal = (TextView) findViewById(R.id.contact_text_normal);
         meTextSelect = (TextView) findViewById(R.id.me_text_select);
         meTextNormal = (TextView) findViewById(R.id.me_text_normal);
 
         indexView = mInflater.inflate(R.layout.page_01, null);
         findView = mInflater.inflate(R.layout.page_03, null);
+        contactView = mInflater.inflate(R.layout.page_02, null);
         meView = mInflater.inflate(R.layout.page_04, null);
 
         viewList.add(indexView);
         viewList.add(findView);
+        viewList.add(contactView);
         viewList.add(meView);
 
         iconList.add(indexIconNormal);
         iconList.add(indexIconSelect);
         iconList.add(findIconNormal);
         iconList.add(findIconSelect);
+        iconList.add(contactIconNormal);
+        iconList.add(contactIconSelect);
         iconList.add(meIconNormal);
         iconList.add(meIconSelect);
 
@@ -208,6 +221,8 @@ public class MainActivity extends Activity {
         textList.add(indexTextSelect);
         textList.add(findTextNormal);
         textList.add(findTextSelect);
+        textList.add(contactTextNormal);
+        textList.add(contactTextSelect);
         textList.add(meTextNormal);
         textList.add(meTextSelect);
 
@@ -216,6 +231,8 @@ public class MainActivity extends Activity {
 
         indexIconNormal.setAlpha(0f);
         indexTextNormal.setAlpha(0f);
+        contactIconSelect.setAlpha(0f);
+        contactTextSelect.setAlpha(0f);
         findIconSelect.setAlpha(0f);
         findTextSelect.setAlpha(0f);
         meIconSelect.setAlpha(0f);
@@ -263,6 +280,13 @@ public class MainActivity extends Activity {
         if (curIndex != INDEX) {
             colorChange(INDEX, curIndex, 0);
             viewPager.setCurrentItem(INDEX, false);
+        }
+    }
+
+    public void showContact(View view) {
+        if (curIndex != CONTACT_INDEX) {
+            colorChange(CONTACT_INDEX, curIndex, 0);
+            viewPager.setCurrentItem(CONTACT_INDEX, false);
         }
     }
 
