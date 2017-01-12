@@ -5,6 +5,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="14dp"
+                android:background="#ffffff"
                 android:paddingBottom="23dp">
     <ImageView
         android:id="@+id/goods_img"

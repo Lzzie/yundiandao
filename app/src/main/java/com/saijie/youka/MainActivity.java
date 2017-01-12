@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import com.saijie.youka.base.ContentAdapter;
 import com.saijie.youka.details.SellerActivity;
+import com.saijie.youka.fn.AboutActivity;
 import com.saijie.youka.fn.AddressActivity;
 import com.saijie.youka.fn.FqjcActivity;
 import com.saijie.youka.fn.FriendActivity;
@@ -103,6 +104,8 @@ public class MainActivity extends Activity {
         // 初始化控件
         initView();
 
+
+
         //右上角二级菜单
         inint();
         /** // 实现右上角弹出菜单---弃用（因为出现Null Object ImageView OnClickListener）
@@ -116,6 +119,10 @@ public class MainActivity extends Activity {
         });
        */
     }
+
+
+
+
     /**            二级菜单----Start                        */
     public void showPop(View v) {
         titlePopup.show(findViewById(R.id.iv_show_Pop));
@@ -158,12 +165,12 @@ public class MainActivity extends Activity {
                     intent = new Intent(MainActivity.this, CaptureActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
                     startActivity(intent);
-
                     break;
                 case 3:// 关于与帮助
                     Toast.makeText(MainActivity.this, "关于与帮助",Toast.LENGTH_SHORT).show();
-                    break;
-                default:
+                    intent = new Intent(MainActivity.this, AboutActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+                    startActivity(intent);
                     break;
             }
         }
@@ -251,7 +258,6 @@ public class MainActivity extends Activity {
                 colorChange(index, index + 1, ratio);
             }
         }
-
         @Override
         public void onPageScrollStateChanged(int arg0) {
         }
@@ -275,6 +281,10 @@ public class MainActivity extends Activity {
         textList.get(destIndex * 2).setAlpha(1 - ratio);
         textList.get(destIndex * 2 + 1).setAlpha(ratio);
     }
+
+//--------------------------------------------===========================================------------------------------------
+
+
 
     public void showIndex(View view) {
         if (curIndex != INDEX) {
@@ -400,7 +410,6 @@ public class MainActivity extends Activity {
     }
 
 
-
     //防止自己写的应用程序不小心点击退出键而直接退出
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event)
@@ -438,8 +447,6 @@ public class MainActivity extends Activity {
             }
         }
     };
-
-
 
 
     @Override

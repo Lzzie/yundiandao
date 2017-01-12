@@ -74,7 +74,6 @@ public class JshipaiActivity extends Activity {
 			list.add(goodsinfo);
 		}
 		adapter.notifyDataSetChanged();
-
 	}
 
 	private void findById() {

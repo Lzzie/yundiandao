@@ -52,4 +52,8 @@
     <string name="xz10">•免费提供WiFi</string>
     <string name="xz11">•免费提供100个停车位</string>
 
+    <string name="pvrCompleted">广场</string>
+    <string name="pvrUnfinished">帮派</string>
+    <string name="pvrFailure">亲密度</string>
+
 </resources>

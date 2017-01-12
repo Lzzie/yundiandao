@@ -226,7 +226,7 @@ public final class CaptureActivity extends BaseActivity implements OnClickListen
 		// camera error
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setTitle(getString(R.string.app_name));
-		builder.setMessage("相机打开出错，请稍后重试");
+		builder.setMessage("相机打开出错，请稍后重试(请给予本app权限)");
 		builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
 
 			@Override

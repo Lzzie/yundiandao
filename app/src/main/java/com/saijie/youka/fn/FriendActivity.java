@@ -35,7 +35,6 @@ public class FriendActivity extends BaseActivity {
 				}
 			}
 		});
-
 	}
 
 	/**
