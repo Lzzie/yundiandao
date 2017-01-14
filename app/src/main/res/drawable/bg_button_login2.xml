@@ -7,11 +7,7 @@
 
     <stroke android:width="0dip" android:color="#ededed" />
 
-    <corners
-        android:bottomLeftRadius="10dp"
-        android:bottomRightRadius="10dp"
-        android:topLeftRadius="10dp"
-        android:topRightRadius="10dp" /> <!-- 设置四个角的半径 -->
+    <corners android:radius="5dp" /> <!-- 设置四个角的半径 -->
 
 
 

@@ -24,14 +24,16 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".WelcomeActivity"
+            android:theme="@style/Appwelcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:theme="@android:style/Theme.NoTitleBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
 
         <meta-data
@@ -130,9 +132,6 @@
             android:name=".fn.JshipaiActivity"
             android:label="@android:style/Theme.NoTitleBar">
         </activity>
-
-        <service android:name="com.admob.zkapp.covers.ViewService"/>
-
         <activity android:name=".fn.AboutActivity">
         </activity>
     </application>

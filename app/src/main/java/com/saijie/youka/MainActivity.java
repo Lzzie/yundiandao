@@ -51,7 +51,6 @@ public class MainActivity extends Activity {
   //  private PopupMenu popupMenu;
       private TitlePopup titlePopup;
 
-
     // 布局集合 实现主界面的左右滑动效果
     private List<ImageView> iconList; // 图标集合
     private List<TextView> textList; // 文字集合
@@ -85,7 +84,7 @@ public class MainActivity extends Activity {
 
     private final int INDEX = 0; // 首页菜单索引
     private final int FIND_INDEX = 1; // 发现菜单索引
-    private final int CONTACT_INDEX = 2; // 联系人菜单索引
+    private final int CONTACT_INDEX = 2; // 圈子索引
     private final int ME_INDEX = 3; // 我的菜单索引
     private int curIndex; // 当前菜单索引
 
@@ -104,8 +103,6 @@ public class MainActivity extends Activity {
         // 初始化控件
         initView();
 
-
-
         //右上角二级菜单
         inint();
         /** // 实现右上角弹出菜单---弃用（因为出现Null Object ImageView OnClickListener）
@@ -119,7 +116,6 @@ public class MainActivity extends Activity {
         });
        */
     }
-
 
 
 
@@ -283,7 +279,6 @@ public class MainActivity extends Activity {
     }
 
 //--------------------------------------------===========================================------------------------------------
-
 
 
     public void showIndex(View view) {

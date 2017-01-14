@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="14dp"
@@ -13,9 +13,10 @@
         android:layout_height="120dp"
         android:background="@mipmap/jishipai_cs"/>
     <LinearLayout
+        android:id="@+id/details"
         android:layout_toRightOf="@id/goods_img"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="120dp"
         android:layout_marginRight="50dp"
         android:layout_marginLeft="20dp"
         android:orientation="vertical">
@@ -44,19 +45,16 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:text="豪华标准间"
-            android:layout_marginTop="5dp"
             style="@style/text_333333_16sp"/>
         <TextView
             android:id="@+id/goods_address"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:layout_marginTop="5dp"
             android:text="地址：临西五路与成才路交汇处"
             style="@style/text_99918d_12sp"
             android:lines="1"/>
         <LinearLayout
-            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -79,7 +77,6 @@
 
         </LinearLayout>
         <LinearLayout
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -111,12 +108,14 @@
         style="@style/text_6666666_12sp"/>
     <Button
         android:id="@+id/buy_button"
-        android:layout_width="85dp"
-        android:layout_height="44dp"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
         android:text="立即抢购"
-        android:background="@drawable/buy_button"
+        android:textSize="12sp"
+        android:background="@drawable/bg_button_login_select"
         android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/details"
+        android:layout_marginTop="-24dp"
         android:textColor="@color/white"/>
 
 </RelativeLayout>

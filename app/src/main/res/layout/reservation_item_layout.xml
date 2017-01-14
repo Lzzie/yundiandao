@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="14dp"
+                android:background="#ffffff"
+                android:paddingBottom="14dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:onClick="showJingu"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="match_parent"
+            android:id="@+id/reser_goods_img"
+            android:src="@mipmap/reservation_sjt"
+            android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:layout_marginLeft="5dp"
+
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:gravity="center_vertical|left"
+                android:id="@+id/reser_seller_name"
+                android:text="金谷大酒店兰亭序主题餐厅"
+                android:textColor="#333333"
+                android:textSize="20sp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:id="@+id/reser_seller_pj"
+                android:layout_gravity="left"
+                android:src="@mipmap/wydp5x"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:gravity="center_vertical|left"
+                android:id="@+id/reser_seller_type"
+                android:text="鲁菜"
+                android:textSize="16sp"
+                android:textColor="#999999"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center_vertical|left"
+                    android:id="@+id/reser_seller_addres"
+                    android:text="[涑河街] 188元 超值4-6"
+                    android:textColor="#999999"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/reser_seller_jl"
+                    android:text="71m"
+                    android:textColor="#999999"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

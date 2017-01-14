@@ -13,6 +13,7 @@ public class GoodsInfo {
 	private float goods_price_first;//原始价格
 	private float goods_price_now;//当前价格(特价价格)
 	private String goods_img;//商品图片
+	private int normal;//商品是否失效（过期）-1:过期，0：正在抢购，1：即将开抢
 
 	public String getAddress() {
 		return address;
@@ -83,6 +84,15 @@ public class GoodsInfo {
 	}
 
 	public void setSeller_name(String seller_name) {
+
 		this.seller_name = seller_name;
+	}
+
+	public int getNormal() {
+		return normal;
+	}
+
+	public void setNormal(int normal) {
+		this.normal = normal;
 	}
 }

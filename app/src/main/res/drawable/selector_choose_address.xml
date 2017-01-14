@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/myaddress_select" android:state_checked="true"></item>
+    <item android:drawable="@mipmap/myaddress_select" android:state_selected="true"></item>
+    <item android:drawable="@mipmap/myaddress_select" android:state_focused="true"></item>
+    <item android:drawable="@mipmap/myaddress_select" android:state_pressed="true"></item>
+
+    <item android:drawable="@mipmap/myaddress_unselect" android:state_checked="false"></item>
+    <item android:drawable="@mipmap/myaddress_unselect" android:state_selected="false"></item>
+    <item android:drawable="@mipmap/myaddress_unselect" android:state_focused="false"></item>
+    <item android:drawable="@mipmap/myaddress_unselect" android:state_pressed="false"></item>
+
+    <!--android:state_selected="true"  羅列四種屬性  我的收貨地址，選擇按鈕 -->
+</selector>

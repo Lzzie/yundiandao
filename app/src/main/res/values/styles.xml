@@ -6,6 +6,15 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <!--colorAccent-->
     </style>
+    <!--        <item name="android:windowBackground">@mipmap/welcome</item>  欢迎页图片  -->
+    <style name="WelcomeStyle" parent="android:Theme">
+        <item name="android:windowBackground">@mipmap/welcome</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style
+        name="Appwelcome"
+        parent="android:Theme.Translucent.NoTitleBar.Fullscreen">
+    </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>

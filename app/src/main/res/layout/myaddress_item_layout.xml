@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="14dp"
+                android:background="#ffffff"
+                android:paddingBottom="14dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="收件人："
+                        android:id="@+id/myaddress_sjr"
+                        android:textSize="18sp"
+                        android:textColor="#333333"
+                        android:gravity="center_vertical|left"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="王员外 180*****125"
+                        android:id="@+id/myaddress_user"
+                        android:textSize="18sp"
+                        android:textColor="#333333"
+                        android:gravity="center_vertical|left"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="match_parent"
+                        android:text="地址："
+                        android:id="@+id/myaddress_dz"
+                        android:textSize="16sp"
+                        android:textColor="#333333"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="match_parent"
+                        android:text="山东省 临沂市 兰山区 成才路与蒙山大道交汇处"
+                        android:textSize="16sp"
+                        android:textColor="#333333"
+                        android:id="@+id/myaddress_useraddress"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.2">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/unselect"
+                    android:background="@drawable/selector_choose_address"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -60,6 +60,7 @@ public class JshipaiAdapter extends BaseAdapter {
 			viewHolder.goodsNum1=(TextView) view.findViewById(R.id.goods_num_1);
 			viewHolder.goodsPriceNow=(TextView) view.findViewById(R.id.goods_price_now);
 			viewHolder.goodsPriceFirst=(TextView) view.findViewById(R.id.goods_price_first);
+			viewHolder.buyButton= (Button) view.findViewById(R.id.buy_button);
 			view.setTag(viewHolder);
 		}else{
 			viewHolder= (ViewHolder) view.getTag();
@@ -72,13 +73,34 @@ public class JshipaiAdapter extends BaseAdapter {
 		viewHolder.goodsNum1.setText(goodsInfo.getGoods_num_1()+"");
 		viewHolder.goodsPriceNow.setText(goodsInfo.getGoods_price_now()+"");
 		viewHolder.goodsPriceFirst.setText(goodsInfo.getGoods_price_first()+"");
+		switch (goodsInfo.getNormal()){
+			case -1:
+				viewHolder.buyButton.setText("已结束");
+				viewHolder.buyButton.setEnabled(false);
+				viewHolder.buyButton.setClickable(false);
+				break;
+			case 0:
+				viewHolder.buyButton.setText("立即抢购");
+				viewHolder.buyButton.setEnabled(true);
+				viewHolder.buyButton.setOnClickListener(new View.OnClickListener( ) {
+					@Override
+					public void onClick(View view) {
+					}
+				});
+				break;
+			case 1:
+				viewHolder.buyButton.setText("即将开抢");
+				viewHolder.buyButton.setEnabled(false);
+				viewHolder.buyButton.setClickable(false);
+				break;
 
+		}
 //		Picasso.with(myContext).load(goodsInfo.getGoods_img()).into(viewHolder.goodsImg);
 
 		return view;
 	}
 
-	 class ViewHolder {
+	class ViewHolder {
 		ImageView goodsImg;
 		TextView sellerName;
 		TextView goodsName;
